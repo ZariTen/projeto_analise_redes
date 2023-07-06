@@ -1,36 +1,29 @@
 About the dataset:
 
-A social network of Twitch users which was collected from the public API in Spring 2018. Nodes are Twitch users and edges are mutual follower relationships between them. The graph forms a single strongly connected component without missing attributes. The machine learning tasks related to the graph are count data regression and node classification. There are 6 specific tasks:
-
-- Explicit content streamer identification.
-- Broadcaster language prediction.
-- User lifetime estimation.
-- Churn prediction.
-- Affiliate status identification.
-- View count estimation.
+A social network of LastFM users which was collected from the public API in March 2020. Nodes are LastFM users from Asian countries and edges are mutual follower relationships between them. The vertex features are extracted based on the artists liked by the users. The task related to the graph is multinomial node classification - one has to predict the location of users. This target feature was derived from the country field for each user.
 
 Statistics:
 
-Nodes 168,114
-Edges 6,797,557
-Density 0.0005
-Transitivity 0.0184
+Nodes 7,624
+Edges 27,806
+Density 0.0009
+Transitivity 0.1787
 
 Citing:
 
-@misc{rozemberczki2021twitch,
-      title={Twitch Gamers: a Dataset for Evaluating Proximity Preserving and Structural Role-based Node Embeddings}, 
+@misc{rozemberczki2020characteristic,
+      title={Characteristic Functions on Graphs: Birds of a Feather, from Statistical Descriptors to Parametric Models},
       author={Benedek Rozemberczki and Rik Sarkar},
-      year={2021},
-      eprint={2101.03091},
+      year={2020},
+      eprint={2005.07959},
       archivePrefix={arXiv},
-      primaryClass={cs.SI}
+      primaryClass={cs.LG}
 }
 
-Twitch Gamers paper:
+FEATHER paper:
 
 https://arxiv.org/abs/2005.07959
 
-Twitch Gamers project:
+FEATHER project:
 
-https://github.com/benedekrozemberczki/datasets
+https://github.com/benedekrozemberczki/FEATHER
